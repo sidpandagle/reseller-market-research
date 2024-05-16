@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --foreground: 222.2 84% 4.9%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    /* --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%; */
+ 
+    --ring: 215 20.2% 65.1%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  /* .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 217.2 32.6% 17.5%;
+  } */
+}
+
+/* .custom-bg {
+  background: linear-gradient(245.93deg, rgba(209, 21, 111, 0.16) 0%, rgba(209, 25, 80, 0) 36.63%), linear-gradient(186.67deg, rgba(56, 0, 169, 0.2) 17.55%, rgba(56, 0, 169, 0.2) 21.02%, rgba(58, 19, 255, 0) 91.62%), #13111C;
+  background-origin: border-box;
+  background-clip: border-box;
+} */
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+  }
+}
+
+/* Prev */
+
+.header-section {
+  @apply py-6 px-4 sm:px-10 md:px-20 lg:px-48
+}
+
+.section {
+  @apply py-12 px-4 sm:px-10 md:px-20 lg:px-48
+}
+
+/* .bg-gradient {
+  background: linear-gradient(45deg, hsla(210, 91%, 39%, 1) 0%, hsla(321, 55%, 50%, 1) 100%);
+} */
+.bg-gradient {
+  /* background: linear-gradient(45deg, hsla(210, 91%, 25%, 1) 15%, hsla(321, 55%, 40%, 1) 85%); */
+
+  background: linear-gradient(135deg, hsla(237, 58%, 13%, 1) 0%, hsla(273, 36%, 35%, 1) 38%, hsla(280, 34%, 43%, 1) 70%, hsla(287, 38%, 54%, 1) 88%, hsla(295, 94%, 76%, 1) 100%);
+}
+
+.html-content {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.html-content a {
+  pointer-events: all;
+}
+
+/* .html-content p {
+  margin: 10px 0 !important;
+} */
+
+.html-content td {
+  min-width: 240px;
+}
+
+
+.html-content {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.html-content td,
+.html-content th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.html-content tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.html-content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.html-content ul {
+  list-style-type: circle;
+  padding: 0 24px 24px 24px;
+}
+
+
+.html-content p img {
+  margin: 24px 0 24px 160px;
+}
+
+@media screen and (max-width:1300px) {
+  .html-content p img {
+    margin: 24px 0 24px 100px;
+  }
+  
+  .html-content td {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .html-content p img {
+    margin: 24px 0;
+  }
+}
+
+
+/* Button Animation Start */
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  /* margin: 0 auto; */
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: hover-animate 1s linear infinite;
+  /* animation-play-state: paused; */
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes hover-animate {
+    to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  background: #6366F1;
+  /* padding: 0.5rem 1.5rem; */
+  /* font-size: 1.1rem; */
+  border-radius: 3px;
+  height: 100%;
+}
+.codepen-button span:hover {
+  background: #4F46E5;
+}
+/* Button Animation End */
+
+
+img {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  /* background-color: #8070d4; */
+  background-color: grey;
+}
