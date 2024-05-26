@@ -2,11 +2,11 @@ import React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Join Our Team - Careers at Congruence Market Insights',
+    title: 'Join Our Team - Careers at Research Envision',
     description: 'Explore exciting career opportunities at CMI. Learn about our mission, values, and join us in delivering valuable insights to the world.',
     keywords: 'Careers, Job Opportunities, Join Our Team, Employment, Work with Us, Company Culture, Team Profiles, Career Growth, Job Openings, Recruitment, Hiring, Professional Development, Employee Benefits',
     alternates: {
-        canonical: 'https://www.congruencemarketinsights.com/career',
+        canonical: 'https://www.researchenvision.com/career',
     },
 }
 
@@ -19,10 +19,10 @@ export default function Careers() {
             <div className="max-w-6xl p-4 mx-auto sm:px-6">
                 <div className='py-8 text-center'>
                     <div className='mb-4 text-3xl font-extrabold tracking-tight text-gray-900 '>
-                        Join Our Team at Congruence Market Insights
+                        Join Our Team at Research Envision
                     </div>
                     <div className='text-slate-500'>
-                        At Congruence Market Insights, we believe in the power of collaboration, innovation, and passion. We are constantly seeking talented individuals who are enthusiastic about shaping the future of market research. Join our dynamic team and embark on a rewarding career where your ideas are valued, and your potential is nurtured.
+                        At Research Envision, we believe in the power of collaboration, innovation, and passion. We are constantly seeking talented individuals who are enthusiastic about shaping the future of market research. Join our dynamic team and embark on a rewarding career where your ideas are valued, and your potential is nurtured.
                     </div>
                 </div>
                 <div className="items-center gap-4 py-8 ">
@@ -49,7 +49,7 @@ export default function Careers() {
                                     <div className='mb-2 font-semibold'>Professional Growth</div>
                                     <div className='text-sm '>
 
-                                        We invest in our employees' growth and development. At Congruence Market Insights, you'll have access to training programs, workshops, and mentorship opportunities, enabling you to enhance your skills and advance your career.
+                                        We invest in our employees' growth and development. At Research Envision, you'll have access to training programs, workshops, and mentorship opportunities, enabling you to enhance your skills and advance your career.
                                     </div>
                                 </div>
                                 <div className='px-8 py-4 text-lg text-center md:w-1/3'>
@@ -94,10 +94,10 @@ export default function Careers() {
                     </div>
                     <div className='md:flex'>
                         <div className='pr-8 md:w-1/2 text-slate-500'>
-                            To apply or express your interest in joining our team, please send your resume and a cover letter detailing your relevant experience and skills to <a href="mailto:sales@congruencemarketinsights.com" className='text-blue-500 underline cursor-pointer'>hr@congruencemarketinsights.com</a> Be sure to mention the position you are applying for in the subject line.
+                            To apply or express your interest in joining our team, please send your resume and a cover letter detailing your relevant experience and skills to <a href="mailto:sales@researchenvision.com" className='text-blue-500 underline cursor-pointer'>hr@researchenvision.com</a> Be sure to mention the position you are applying for in the subject line.
                         </div>
                         <div className='pr-8 md:w-1/2 text-slate-500'>
-                            Join us at Congruence Market Insights and be part of a journey where your career aspirations meet limitless possibilities. Together, let's shape the future of market research.
+                            Join us at Research Envision and be part of a journey where your career aspirations meet limitless possibilities. Together, let's shape the future of market research.
                         </div>
                     </div>
                 </div>

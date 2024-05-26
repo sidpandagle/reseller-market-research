@@ -6,7 +6,7 @@ export default class PlaceAnOrder extends Component {
 
             <div className='py-2'>
                 <div className='mb-2'>
-                    Thank you for your interest in Congruence Market Insights. We are delighted to guide you through a seamless process to obtain the reports you are looking for. Below are the steps you can take to place an order:
+                    Thank you for your interest in Research Envision. We are delighted to guide you through a seamless process to obtain the reports you are looking for. Below are the steps you can take to place an order:
                 </div>
                 <div className='mb-2'>
                     <div className='font-bold'>
@@ -24,7 +24,7 @@ export default class PlaceAnOrder extends Component {
                     <div className='font-bold'>
                         Via Email:
                     </div>
-                    For a written communication option, you can email us at sales@congruencemarketinsights.com. Share your details, including name, company name, designation, address, and contact information. Provide the mode of payment, billing and delivery address, the name of the report, and any specific requirements you may have. Our business development team will respond to your email within 24 hours and assist you with the order process.
+                    For a written communication option, you can email us at sales@researchenvision.com. Share your details, including name, company name, designation, address, and contact information. Provide the mode of payment, billing and delivery address, the name of the report, and any specific requirements you may have. Our business development team will respond to your email within 24 hours and assist you with the order process.
                 </div>
                 <div className='mb-2'>
                     <div className='font-bold'>
@@ -37,7 +37,7 @@ export default class PlaceAnOrder extends Component {
                 </div>
                 <div className='mb-2'>
 
-                    Thank you for choosing Congruence Market Insights. We look forward to serving your information needs effectively.
+                    Thank you for choosing Research Envision. We look forward to serving your information needs effectively.
 
                 </div>
             </div>

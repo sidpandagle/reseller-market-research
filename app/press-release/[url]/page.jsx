@@ -10,7 +10,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     const url = params.url
     const pr = await fetch(`${apiUrl}/press_release/meta/${url}`);
     const response = await pr.json();
-    const siteURL = 'https://www.congruencemarketinsights.com';
+    const siteURL = 'https://www.researchenvision.com';
     return {
         title: toCapitalCase(response.data.meta_title),
         // description: response.data.meta_desc,
@@ -106,7 +106,7 @@ export default async function PressRelease({ params }) {
                                             <div className='flex flex-col gap-4 mt-4 md:flex-row md:mt-0'>
                                                 {pressRelease.report_id > 0 &&
                                                     <Link href={`/buy-now/${pressRelease.report_id}/1`}>
-                                                        <button className="inline-flex items-center justify-center gap-4 py-2 font-semibold text-white transition-all bg-indigo-500 border border-transparent rounded-md w-44 text-md hover:bg-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
+                                                        <button className="inline-flex items-center justify-center gap-4 py-2 font-semibold text-white transition-all border border-transparent rounded-md bg-primary w-44 text-md hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
                                                             Buy Now
                                                         </button>
                                                     </Link>}

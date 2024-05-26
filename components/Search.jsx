@@ -46,19 +46,38 @@ export default function Search() {
         // <div className={`mx-auto py-12 bg-cover bg-bottom flex justify-center items-center bg-gradient-0 text-white`}>
         // <div className={`mx-auto py-12 bg-cover bg-bottom flex justify-center items-center bg-gradient-45 text-white`}>
         <div className={`relative mx-auto py-12 md:h-[75vh] bg-cover overflow-clip bg-bottom flex justify-center items-center bg-gradient text-white`}>
-            <video className='absolute bottom-0 z-10 hidden w-full brightness-[0.4] md:block' autoPlay muted loop id="myVideo">
+            {/* <video className='absolute bottom-0 z-10 hidden w-full brightness-[0.4] md:block' autoPlay muted loop id="myVideo">
                 <source data-src={"/assets/sample.webm"} type="video/mp4" src={"/assets/sample.webm"} />
             </video>
             <video className='absolute top-0 z-10 block w-full brightness-[0.4] md:hidden' autoPlay muted loop id="myVideo">
                 <source data-src={"/assets/sample_vertical.webm"} type="video/mp4" src={"/assets/sample_vertical.webm"} />
-            </video>
+            </video> */}
 
             <div className='z-10 flex flex-col gap-8 px-4 text-center md:px-16 md:gap-8'>
-                <div className="text-3xl font-semibold md:text-4xl" >
-                    Navigating Trends, Illuminating Insights
+               
+            <div className='relative flex items-center justify-center gap-4 pt-4' >
+                    <div className='hidden md:block w-1/4 h-[2px] bg-white'>
+                    </div>
+                    <div className='text-xl text-center'>
+                        Browse By Industry
+                    </div>
+                    <div className='hidden md:block w-1/4 h-[2px] bg-white'>
+                    </div>
                 </div>
-                <div className='flex justify-center'>
-                    <div className="text-sm text-center md:w-5/6 md:text-lg" >Empower your business with data-driven strategies. Discover trends, analyze markets, and seize opportunities for sustainable success. Explore limitless possibilities today!</div>
+                <div className='md:h-20'>
+                    <motion.div initial={{ opacity: 0, y: '25%' }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} viewport={{ once: true }}>
+                        <div className='grid items-start justify-center w-full grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-14'>
+                        {
+                                categories.map((res, index) => (
+                                    <Link key={index} href={`/reports/${res.url}`}>
+                                        <div className='flex flex-col items-center gap-1 mb-2 duration-200 hover:scale-125 hover:font-semibold'>
+                                            <img loading="lazy" src={'/assets/' + res.icon} alt='category-icon' className="flex justify-center w-6 duration-100 "></img>
+                                            <div className="text-center mx-1 text-[8px] md:text-[10px] w-20">{res.name}</div>
+                                        </div>
+                                    </Link>
+                                ))}
+                        </div>
+                    </motion.div>
                 </div>
                 <div className='flex items-center justify-center'>
                     <div className='flex items-center justify-between overflow-hidden bg-white rounded-lg focus-within:shadow-lg'>
@@ -84,27 +103,9 @@ export default function Search() {
 
                     </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 pt-4' >
-                    <div className='text-xl text-center'>
-                        Browse By Industry
-                    </div>
-                    <div className='hidden md:block w-1/2 h-[2px] bg-white'>
-                    </div>
-                </div>
-                <div className='md:h-20'>
-                    <motion.div initial={{ opacity: 0, y: '25%' }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} viewport={{ once: true }}>
-                        <div className='grid items-start justify-center w-full grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-14'>
-                        {
-                                categories.map((res, index) => (
-                                    <Link key={index} href={`/reports/${res.url}`}>
-                                        <div className='flex flex-col items-center gap-1 mb-2 duration-200 hover:scale-125 hover:font-semibold'>
-                                            <img loading="lazy" src={'/assets/' + res.icon} alt='category-icon' className="flex justify-center w-6 duration-100 "></img>
-                                            <div className="text-center mx-1 text-[8px] md:text-[10px] w-20">{res.name}</div>
-                                        </div>
-                                    </Link>
-                                ))}
-                        </div>
-                    </motion.div>
+                
+                <div className="mt-3 text-3xl tracking-widest uppercase md:text-2xl" >
+                    Decision with Precision
                 </div>
             </div>
             <CustomToastContainer />

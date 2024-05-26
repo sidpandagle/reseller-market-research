@@ -80,10 +80,10 @@ export default function Contact() {
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="block mb-4 text-base font-semibold text-primary">Contact Us</span>
                 <h2 className="mb-6 text-2xl md:text-[32px] font-bold text-[#652E7E] uppercase text-dark sm:text-[40px] lg:text-[28px] xl:text-[32px]">
-                  Get in Touch with <br /> Congruence Market Insights
+                  Get in Touch with <br /> Research Envision
                 </h2>
                 <p className="text-base leading-relaxed mb-9 text-body-color">
-                  At Congruence Market Insights, we value your inquiries, feedback, and the opportunity to connect with you. Whether you have questions, require information, or wish to explore potential collaborations, we are here to assist you.
+                  At Research Envision, we value your inquiries, feedback, and the opportunity to connect with you. Whether you have questions, require information, or wish to explore potential collaborations, we are here to assist you.
                 </p>
                 <div className="mb-8 flex w-full max-w-[500px]">
                   <div className="hidden md:flex mr-6  h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -137,7 +137,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <a href="mailto:sales@congruencemarketinsights.com">
+                <a href="mailto:sales@researchenvision.com">
                   <div className="mb-8 flex w-full max-w-[500px]">
                     <div className="hidden md:flex mr-6  h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
                       <svg
@@ -154,7 +154,7 @@ export default function Contact() {
                         Email Address
                       </h4>
                       <p className="text-sm text-blue-500 underline text-body-color md:text-base ">
-                        sales@congruencemarketinsights.com
+                        sales@researchenvision.com
                       </p>
                     </div>
                   </div>

@@ -6,7 +6,7 @@ export default class Privacy extends Component {
 
             <div>
                 <div className='mb-2'>
-                    At Congruence Market Insights, we highly value your privacy and are committed to ensuring the confidentiality of the information you provide to us. This privacy policy outlines our practices regarding the collection and use of personal information. By accessing our website at www.congruencemarketinsights.com, you agree to the terms described in this Privacy Policy.
+                    At Research Envision, we highly value your privacy and are committed to ensuring the confidentiality of the information you provide to us. This privacy policy outlines our practices regarding the collection and use of personal information. By accessing our website at www.researchenvision.com, you agree to the terms described in this Privacy Policy.
                 </div>
 
                 <div className='mb-2'>
@@ -53,7 +53,7 @@ export default class Privacy extends Component {
                     <div className='font-bold'>
                         6. Security Measures:
                     </div>
-                    Congruence Market Insights employs security measures to prevent the loss, misuse, and alteration of information obtained from you. While we implement security protocols, we cannot guarantee prevention of loss, misuse, or alteration. Your data is stored on secure servers.
+                    Research Envision employs security measures to prevent the loss, misuse, and alteration of information obtained from you. While we implement security protocols, we cannot guarantee prevention of loss, misuse, or alteration. Your data is stored on secure servers.
                 </div>
 
 
@@ -67,7 +67,7 @@ export default class Privacy extends Component {
 
                 <div className='mb-2'>
 
-                    By using our website, you acknowledge and agree to the terms outlined in this Privacy Policy. For any questions or concerns regarding your privacy, please contact us at contact@congruencemarketinsights.com. This policy is subject to change, and any modifications will be effective immediately upon posting on our website.
+                    By using our website, you acknowledge and agree to the terms outlined in this Privacy Policy. For any questions or concerns regarding your privacy, please contact us at contact@researchenvision.com. This policy is subject to change, and any modifications will be effective immediately upon posting on our website.
 
                 </div>
             </div>

@@ -11,22 +11,22 @@ import moment from 'moment';
 // export async function generateMetadata({ params, searchParams }, parent) {
 //     const url = params.url
 //     return {
-//         title: 'Press Releases - Latest News and Updates | Congruence Market Insights',
+//         title: 'Press Releases - Latest News and Updates | Research Envision',
 //         description: 'Stay informed with our latest press releases. Explore news and updates across various categories, showcasing our commitment to delivering valuable insights.',
 //         keywords: 'Press Releases, Latest News, Company Updates, Press Release Categories, Corporate Announcements, Market Insights, Industry News, Business Reports, Press Release Archive',
 //         alternates: {
-//             canonical: 'https://www.congruencemarketinsights.com/press-releases/' + url
+//             canonical: 'https://www.researchenvision.com/press-releases/' + url
 //         },
 //     }
 // }
 
 
 // export const metadata: Metadata = {
-//     title: 'Syndicate, Custom and Consulting Report Services from Congruence',
-//     description: 'Unlock strategic advantages with Congruence Market Insights—your partner for syndicate reports, custom research, and consulting services.',
+//     title: 'Syndicate, Custom and Consulting Report Services from Research Envision',
+//     description: 'Unlock strategic advantages with Research Envision—your partner for syndicate reports, custom research, and consulting services.',
 //     keywords: 'Syndicate Reports, Custom Research, Consulting Services, Market Insights, Strategic Analysis, Tailored Solutions, Business Intelligence, Industry Trends, Data-driven Insights, Competitive Landscape, Emerging Markets, Comprehensive Research, Market Dynamics, Strategic Consulting, Customized Reports',
 //     alternates: {
-//         canonical: 'https://www.congruencemarketinsights.com/offering',
+//         canonical: 'https://www.researchenvision.com/offering',
 //     },
 // }
 

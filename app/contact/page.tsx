@@ -5,11 +5,11 @@ export const revalidate = 3600 //every 1 hr
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Get in Touch with Congruence Market Insights',
-    description: 'Connect with Congruence Market Insights through our Contact page. Reach out for inquiries, collaborations, or tailored market solutions.',
+    title: 'Get in Touch with Research Envision',
+    description: 'Connect with Research Envision through our Contact page. Reach out for inquiries, collaborations, or tailored market solutions.',
     keywords: 'Contact Us, Inquiry Form, Collaboration Requests, Market Solutions, Business Consultation, Reach Out, Communication, Inquiry Submission, Assistance, Business Partnership, Contact Information, Inquiry Process, Connect, Customer Support',
     alternates: {
-      canonical: 'https://www.congruencemarketinsights.com/contact',
+      canonical: 'https://www.researchenvision.com/contact',
   },
 }
 
@@ -23,10 +23,10 @@ export default function Contact() {
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="block mb-4 text-base font-semibold text-primary">Contact Us</span>
                 <h1 className="mb-6 text-2xl md:text-[32px] font-bold text-[#652E7E] uppercase text-dark sm:text-[40px] lg:text-[28px] xl:text-[32px]">
-                  Get in Touch with <br /> Congruence Market Insights
+                GET IN TOUCH WITH <br /> RESEARCH ENVISION
                 </h1>
                 <p className="text-base leading-relaxed mb-9 text-body-color">
-                  At Congruence Market Insights, we value your inquiries, feedback, and the opportunity to connect with you. Whether you have questions, require information, or wish to explore potential collaborations, we are here to assist you.
+                At Research Envision, we highly appreciate your inquiries, feedback, and the chance to engage with you. Whether you have queries, need information, or seek potential collaborations, we're here to help.
                 </p>
                 <div className="mb-8 flex w-full max-w-[500px]">
                   <div className="hidden md:flex mr-6  h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -80,7 +80,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <a href="mailto:sales@congruencemarketinsights.com">
+                <a href="mailto:sales@researchenvision.com">
                   <div className="mb-8 flex w-full max-w-[500px]">
                     <div className="hidden md:flex mr-6  h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
                       <svg
@@ -97,12 +97,12 @@ export default function Contact() {
                         Email Address
                       </h4>
                       <p className="text-sm text-blue-500 underline text-body-color md:text-base ">
-                        sales@congruencemarketinsights.com
+                      sales@researchenvision.com
                       </p>
                     </div>
                   </div>
                 </a>
-                <div>We look forward to connecting with you and addressing your needs. Your feedback and questions are essential to us as we strive to provide you with the highest quality of service.
+                <div>We eagerly anticipate connecting with you and meeting your needs. Your feedback and inquiries are invaluable to us as we endeavor to deliver the utmost quality of service.
                 </div>
               </div>
             </div>

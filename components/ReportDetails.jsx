@@ -103,10 +103,10 @@ export default function ReportBuyNow({ report, url, segment }) {
   return (
     <div>
       <div className={`${(segment !== 'request-sample' && segment !== 'Request') && 'md:sticky top-0'} p-4 relative justify-between gap-2 bg-white md:flex`}>
-        <Link href={'/report/' + report?.url} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${!segment ? 'font-bold bg-primary text-white' : ''}`}>Description</Link>
-        <Link href={'/report/' + report?.url + '/toc' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'toc' ? 'font-bold bg-primary text-white' : ''}`}>Table Of Content</Link>
-        <Link href={'/report/' + report?.url + '/highlights' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'highlights' ? 'font-bold bg-primary text-white' : ''}`}>Highlights</Link>
-        <Link href={'/report/' + report?.url + '/methodology' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'methodology' ? 'font-bold bg-primary text-white' : ''}`}>Methodology</Link>
+        <Link href={'/report/' + report?.url} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${!segment ? 'font-bold bg-o1 text-white' : ''}`}>Description</Link>
+        <Link href={'/report/' + report?.url + '/toc' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'toc' ? 'font-bold bg-o1 text-white' : ''}`}>Table Of Content</Link>
+        <Link href={'/report/' + report?.url + '/highlights' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'highlights' ? 'font-bold bg-o1 text-white' : ''}`}>Highlights</Link>
+        <Link href={'/report/' + report?.url + '/methodology' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'methodology' ? 'font-bold bg-o1 text-white' : ''}`}>Methodology</Link>
         <Link href={'/report/' + report?.url + '/request-sample' } className={`codepen-button md:w-1/4 w-full md:mb-0 mb-4 text-sm box-border relative z-10 flex justify-center items-center border rounded-sm cursor-pointer ${segment === 'request-sample'  && segment !== 'Request' ? 'font-bold' : ''}`}>
           <span className='py-2 text-center'>Request Sample</span>
         </Link>

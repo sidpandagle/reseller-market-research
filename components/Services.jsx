@@ -15,7 +15,7 @@ export default function Services() {
 
                         <div className='flex justify-center mb-2 text-sm text-slate-300'>
                             <div className='w-4/5 md:w-full'>
-                                Welcome to Congruence Market Insights, where strategic insights and innovative solutions converge to empower your business. We offer a diverse range of services tailored to meet your unique market research needs. By partnering with us, you unlock a world of opportunities and gain a competitive edge in your industry. Explore our services and discover how we can drive your business forward.
+                            Welcome to Research Envision, where strategic insights and innovative solutions come together to empower your business. We provide a wide array of services customized to meet your specific market research needs. Partnering with us opens a world of opportunities and gives you a competitive edge in your industry. Discover our services and see how we can propel your business forward.
                             </div>
                         </div>
 
@@ -43,10 +43,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Market Research Reports
+                                            Industry Research Reports
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Discover our comprehensive collection of thoroughly investigated market analyses, encompassing diverse industries, offering deep insights to facilitate informed decision-making.
+                                            Explore our extensive range of meticulously researched market analyses, covering a variety of industries, and providing profound insights to support informed decision-making.
                                             </div>
                                         </div>
                                     </div>
@@ -59,10 +59,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Customized Research Services
+                                            Tailored Research Solutions
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Our personalized research services focus on your unique needs, exploring specialized markets, consumer trends, and industry dynamics for tailored insights.
+                                            Our customized research services are designed to meet your specific needs, delving into specialized markets, consumer trends, and industry dynamics to provide tailored insights.
                                             </div>
                                         </div>
                                     </div>
@@ -76,10 +76,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Industry Analysis and Trends
+                                            Industrial Market Analysis and Trends
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Remain at the forefront with our industry trend reports for an in-depth grasp of market shifts, tech advancements, and consumer preferences.
+                                            Stay ahead with our industry trend reports, offering in-depth understanding of market shifts, technological advancements, and consumer preferences.
                                             </div>
                                         </div>
                                     </div>
@@ -93,10 +93,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Competitive Intelligence
+                                            Competitive Insights
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Confidently maneuver competition using our competitive intelligence. Assess key players, strategies, and products to understand strengths and weaknesses, gaining an edge.
+                                            Navigate the competition with confidence using our competitive intelligence. Evaluate key players, strategies, and products to identify strengths and weaknesses, giving you a competitive edge.
                                             </div>
                                         </div>
                                     </div>
@@ -110,10 +110,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Consumer Insights & Behavior Analysis
+                                            Consumer Behavior Insights and Analysis
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Grasp your audience deeply. Our consumer insights use advanced methods to unravel behavior, preferences, and purchasing, refining strategies for engagement.
+                                            Gain a profound understanding of your audience with our consumer insights. Utilizing advanced methods, we uncover behavior, preferences, and purchasing patterns, helping you refine your engagement strategies.
                                             </div>
                                         </div>
                                     </div>
@@ -127,10 +127,10 @@ export default function Services() {
                                         </div>
                                         <div className="relative flex flex-col justify-between flex-grow gap-1 p-4 text-center md:w-3/5 md:text-left">
                                             <div className='font-semibold '>
-                                                Strategic Consulting
+                                            Strategic Advisory Services
                                             </div>
                                             <div className='mb-2 text-sm md:text-justify text-slate-300'>
-                                                Gain tailored expert guidance aligned with your goals. Our strategic consulting delivers actionable advice and implementation strategies for market expansion and innovation.
+                                            Receive expert guidance tailored to your goals with our strategic consulting. We provide actionable advice and implementation strategies for market expansion and innovation.
                                             </div>
                                         </div>
                                     </div>

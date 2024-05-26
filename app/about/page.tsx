@@ -2,11 +2,11 @@ import React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Who We are - Congruence Market Insights',
+    title: 'Who We are - Research Envision',
     description: 'At CMI, we\'re more than a market research company. Learn about our mission, values, and commitment to delivering valuable insights.',
     keywords: 'About Us, Company Overview, Mission Statement, Values, Market Research Firm, Insights Provider, Corporate Culture, Team Profiles, Company History, Vision Statement, Business Philosophy, Our Story, Leadership Team, Company Mission, Values and Vision',
     alternates: {
-            canonical: `https://www.congruencemarketinsights.com/about`,
+            canonical: `https://www.researchenvision.com/about`,
     },
 }
 
@@ -22,14 +22,14 @@ export default function About() {
                             <h1 className="mb-4 text-3xl font-extrabold tracking-tight  text-[#652E7E] text-gray-900 text-[#652E7E]">About Us</h1>
                             <div className="flex justify-center mb-2 text-xl font-light">
                                 <div className='text-lg text-gray-600 md:p-6'>
-                                    Welcome to <span className='font-semibold'>Congruence Market Insights</span>, where knowledge meets innovation and insight transforms industries. We are not just another market research company; we are your strategic partners in decoding the complexities of the market landscape and uncovering hidden opportunities that drive your business forward.
+                                    Welcome to <span className='font-semibold'>Research Envision</span>, where knowledge meets innovation and insight transforms industries. We are not just another market research company; we are your strategic partners in decoding the complexities of the market landscape and uncovering hidden opportunities that drive your business forward.
                                 </div>
                             </div>
                         </div>
                         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
                             <div className="text-gray-600">
                                 <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-right  text-[#652E7E] text-gray-900 md:text-left">Who We Are</h2>
-                                <div className="mb-2 text-lg font-light text-right md:text-left">At Congruence Market Insights, we are a team of passionate researchers, analysts, and strategists who are dedicated to providing unparalleled market intelligence. With a blend of experience and expertise, we delve deep into market trends, consumer behavior, and industry dynamics to deliver insights that matter. Our commitment goes beyond numbers; we aim to empower businesses with actionable insights that lead to informed decision-making.</div>
+                                <div className="mb-2 text-lg font-light text-right md:text-left">At Research Envision, we are a team of passionate researchers, analysts, and strategists who are dedicated to providing unparalleled market intelligence. With a blend of experience and expertise, we delve deep into market trends, consumer behavior, and industry dynamics to deliver insights that matter. Our commitment goes beyond numbers; we aim to empower businesses with actionable insights that lead to informed decision-making.</div>
                             </div>
                             <img loading="lazy" className="hidden object-cover w-full h-64 mb-4 rounded-lg lg:mb-0 lg:flex" src={'/assets/blurry/about1.webp'} alt="about1" />
                         </div>
@@ -107,8 +107,8 @@ export default function About() {
                             <h2 className="mb-4 text-3xl font-extrabold tracking-tight  text-[#652E7E] text-gray-900">Our Promise</h2>
                             <div className="flex justify-center mb-2 text-lg font-light">
                                 <div className='text-gray-600 md:p-6'>
-                                    When you partner with Congruence Market Insights, you embark on a journey of discovery and growth. We are dedicated to providing you with insights that inspire confidence and drive meaningful outcomes. Our commitment to excellence, coupled with our passion for unraveling market intricacies, ensures that you receive not just data, but actionable intelligence that propels your business toward success.
-                                    Thank you for considering Congruence Market Insights as your trusted research partner. Together, let’s explore the endless possibilities and chart a course for your business’s prosperous future.
+                                    When you partner with Research Envision, you embark on a journey of discovery and growth. We are dedicated to providing you with insights that inspire confidence and drive meaningful outcomes. Our commitment to excellence, coupled with our passion for unraveling market intricacies, ensures that you receive not just data, but actionable intelligence that propels your business toward success.
+                                    Thank you for considering Research Envision as your trusted research partner. Together, let’s explore the endless possibilities and chart a course for your business’s prosperous future.
                                 </div>
                             </div>
                         </div>

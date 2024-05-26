@@ -112,7 +112,7 @@ export default function RequestSample({ reportTitle, enquiryType, closeModal }) 
                             <textarea {...register('message')} id="message" defaultValue={""} rows={2} className="block w-full p-2 text-sm border border-gray-300 rounded-lg bg-gray-50 outline-0 focus:ring-primary-500 focus:border-primary-500 " placeholder="Kindly specify your research needs." />
                         </div>
                         {/* <div className='text-xs text-justify'>
-                            <div className='italic'>"Congruence Market Insights has been an invaluable resource for our team. Their report was thorough and insightful which helped us navigate our industry landscape effectively. We appreciate their professionalism and expertise, making them a trusted partner in our decision-making process."</div>
+                            <div className='italic'>"Research Envision has been an invaluable resource for our team. Their report was thorough and insightful which helped us navigate our industry landscape effectively. We appreciate their professionalism and expertise, making them a trusted partner in our decision-making process."</div>
                             <div className='mt-1 font-semibold text-right'>- Assistant Product Manager, Unilever PLC</div>
                         </div> */}
                         <div className='flex flex-col items-center col-start-1 col-end-3 gap-2 md:flex-row'>
@@ -132,7 +132,7 @@ export default function RequestSample({ reportTitle, enquiryType, closeModal }) 
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <motion.button type="submit" className="inline-flex items-center justify-center gap-2 px-2 py-2 mt-2 font-semibold text-white transition-all bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2"
+                        <motion.button type="submit" className="inline-flex items-center justify-center gap-2 px-2 py-2 mt-2 font-semibold text-white transition-all bg-primary border border-transparent rounded-md hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                         >
@@ -147,7 +147,7 @@ export default function RequestSample({ reportTitle, enquiryType, closeModal }) 
                         </motion.button>
                     </div>
                     <div className='pt-2 text-xs text-justify'>
-                        <div className='italic'>"Congruence Market Insights has been an invaluable resource for our team. Their report was thorough and insightful which helped us navigate our industry landscape effectively. We appreciate their professionalism and expertise, making them a trusted partner in our decision-making process."</div>
+                        <div className='italic'>"Research Envision has been an invaluable resource for our team. Their report was thorough and insightful which helped us navigate our industry landscape effectively. We appreciate their professionalism and expertise, making them a trusted partner in our decision-making process."</div>
                         <div className='mt-1 font-semibold text-right'>- Assistant Product Manager, Unilever PLC</div>
                     </div>
                 </form>

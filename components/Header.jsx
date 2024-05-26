@@ -109,7 +109,7 @@ export default function Header() {
           <div className="px-4">
             <div className="w-full m-4 text-2xl md:m-0">
               <Link href='/'>
-                <img loading="lazy" src={'/assets/cmidarklogo.png'} alt="logo" className="flex justify-center w-44"></img>
+                <img loading="lazy" src={'/assets/reseller/reseller_logo_rect1.png'} alt="logo" className="flex justify-center w-[225px]"></img>
               </Link>
             </div>
           </div>

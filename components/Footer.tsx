@@ -52,17 +52,18 @@ const Footer = () => {
           <div className="md:w-1/2">
             <div className="flex flex-col items-center gap-4 p-8 md:items-start md:px-12 md:py-16 md:flex-row border-slate-700">
               <div className="flex font-bold md:w-1/2">
-                <Link href='/'>
-                  <img loading="lazy" src={'/assets/cmilightlogo.png'} alt="logo" className="flex justify-center "></img>
+                <Link href='/' className="flex items-center justify-center h-20 p-4 bg-white rounded-md">
+                  {/* <img loading="lazy" src={'/assets/cmilightlogo.png'} alt="logo" className="flex justify-center "></img> */}
+                  <img loading="lazy" src={'/assets/reseller/reseller_logo_rect1.png'} alt="logo" className="flex justify-center"></img>
                 </Link>
               </div>
               {/* <div className="w-3/5 text-sm md:text-justify">Harvesting market intelligence to sow success, cultivating strategies for growth in dynamic landscapes. Your compass in the evolving business terrain.</div> */}
-              <div className="text-2xl leading-relaxed md:w-1/2 ">Navigating Trends, Illuminating Insights</div>
+              <div className="text-2xl leading-relaxed md:w-1/2 ">Decision With <br /> Precision</div>
             </div>
             <div className="flex flex-col gap-4 p-8 text-sm border-t md:gap-36 md:flex-row md:px-12 md:py-16 border-slate-600">
               {/* <div>
                 <div className="mb-4 text-xl font-bold">Resources</div>
-                <div className="mb-2">Why Congruence?</div>
+                <div className="mb-2">Why Research Envision?</div>
                 <div className="mb-2">Customer Service</div>
                 <div className="mb-2">Blogs</div>
                 <div className="mb-2">Guides</div>
@@ -99,7 +100,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="mb-2">
-                  <a href="https://www.youtube.com/@CongruenceMarketInsights" target="_blank">
+                  <a href="https://www.youtube.com/@researchenvision" target="_blank">
                     YouTube
                   </a>
                 </div>
@@ -116,7 +117,8 @@ const Footer = () => {
             </div>
             <div className="flex items-center justify-between mt-4 text-black bg-white rounded-full md:mt-8 md:w-3/4">
               <input className="w-full p-2 ml-3 outline-0" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email..." />
-              <div onClick={handleFormOpen} className="p-4 md:p-4 rounded-full bg-[#6f32be] hover:bg-[#763dc0] scale-110">
+              {/* <div onClick={handleFormOpen} className="p-4 md:p-4 rounded-full bg-[#6f32be] hover:bg-[#763dc0] scale-110"> */}
+              <div onClick={handleFormOpen} className="p-4 scale-110 rounded-full md:p-4 bg-o2 hover:bg-o1">
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M5 12l14 0" />
@@ -132,9 +134,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-sm border-t cursor-default border-slate-600">
-          <div className="px-12 py-8 text-justify md:w-3/5">Congruence Market Insights is a leading market research company dedicated to providing unparalleled insights and strategic intelligence. Our expert analysts deliver actionable data, empowering businesses to make informed decisions in a dynamic marketplace. Trust us to navigate your path to success.</div>
+          <div className="px-12 py-8 text-justify md:w-3/5">Research Envision, a leading market research firm, is committed to delivering unmatched insights and strategic intelligence. Our adept analysts provide actionable data, enabling businesses to make informed decisions in today's dynamic marketplace. Trust us for navigating your journey to success.</div>
           <div className="flex flex-col gap-8 px-12 py-8 md:flex-row md:items-end">
-            <div>© 2024 Congruence Market Insights</div>
+            <div>© 2024 Research Envision</div>
             {detailsList.map((r, i) => {
               return <div className="cursor-pointer" key={i} onClick={() => handleDetailsOpen(r.title)}>{r.title}</div>
             })}

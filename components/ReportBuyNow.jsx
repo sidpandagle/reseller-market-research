@@ -61,7 +61,7 @@ export default function ReportBuyNow({ report }) {
             Buy Now
           </span>
         </Link>
-        <button type="button" onClick={handleDiscountFormOpen} className="inline-flex items-center justify-center px-8 py-2 font-semibold text-white transition-all bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
+        <button type="button" onClick={handleDiscountFormOpen} className="inline-flex items-center justify-center px-8 py-2 font-semibold text-white transition-all border border-transparent rounded-md bg-o2 hover:bg-o1 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
           Request Discount
         </button>
       </div>

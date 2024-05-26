@@ -115,7 +115,7 @@ export default function BuyNowForm({ reportTitle, license }) {
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <motion.button type="submit" className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-6 font-semibold text-white transition-all bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2"
+                        <motion.button type="submit" className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-6 font-semibold text-white transition-all bg-primary border border-transparent rounded-md hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}>
 

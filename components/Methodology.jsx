@@ -6,7 +6,7 @@ export default class Methodology extends Component {
 
             <div className='py-2'>
                 <div className='mb-2'>
-                    Congruence Market Insights strives to provide thorough and insightful market analyses using a systematic and multifaceted ‘Data Triangulation’ approach, which involves three main phases: Secondary Research, Primary Research, and In-house Data Validation.
+                    Research Envision strives to provide thorough and insightful market analyses using a systematic and multifaceted ‘Data Triangulation’ approach, which involves three main phases: Secondary Research, Primary Research, and In-house Data Validation.
                 </div>
 
                 <div className='mb-2'>
@@ -71,7 +71,7 @@ export default class Methodology extends Component {
                         The final module focuses on validating market assessments through targeted interviews with industry stakeholders, ensuring alignment with real-world perspectives and industry expectations.
                     </div>
                     <div className='mt-2'>
-                        Congruence Market Insights' research methodology, covering secondary research, primary research, data derivation, triangulation, and validation, is designed to deliver comprehensive and reliable market analyses. The combination of rigorous processes and diverse data sources strengthens the integrity of our findings, providing clients with valuable and actionable insights for informed decision-making.
+                        Research Envision' research methodology, covering secondary research, primary research, data derivation, triangulation, and validation, is designed to deliver comprehensive and reliable market analyses. The combination of rigorous processes and diverse data sources strengthens the integrity of our findings, providing clients with valuable and actionable insights for informed decision-making.
                     </div>
                 </div>
 

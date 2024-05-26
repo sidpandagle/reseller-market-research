@@ -18,9 +18,27 @@ module.exports = {
     extend: {
       colors: {
         
-        primary: '#0076EB',
-        secondary: '#8639F9',
-        tertiary: '#6fe3db',
+        // primary: '#0076EB',
+        // secondary: '#8639F9',
+        // tertiary: '#6fe3db',
+        primary: '#013c4d',
+        secondary: '#d5441c',
+        tertiary: '#F7D0AF',
+        quaternary:'#00566e',
+        // quinary:'',
+        // senary:'',
+        // septenary:'',
+        // octonary:'',
+        // nonary:'',
+        // denary:'',
+        
+        o1: '#D5441C',
+        o2: '#CD5939',
+        o3: '#AA5C46',
+        b1:'#013C4D',
+        b2:'#235360',
+        b3:'#466A74',
+        
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
