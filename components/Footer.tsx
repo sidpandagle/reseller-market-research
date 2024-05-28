@@ -44,13 +44,13 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="relative text-center text-white bg-slate-800 md:text-left">
+      <div className="relative text-center text-white bg-o1 md:text-left">
         {/* <img loading="lazy" src={"/assets/footer-guy.png"} alt="working-guy" className="absolute hidden md:block bottom-0 right-10 h-[420px] transform -scale-x-100" /> */}
-        <img loading="lazy" src={"/assets/f1.png"} alt="working-guy" className="absolute hidden md:block bottom-4 right-20 h-[280px] transform -scale-x-100" />
+        <img loading="lazy" src={"/assets/reseller/c3.png"} alt="working-guy" className="rounded-md absolute hidden md:block bottom-4 right-20 h-[280px]" />
         {/* <img loading="lazy" src={"/assets/f3.png"} alt="working-guy" className="absolute hidden md:block bottom-10 right-20 h-[360px] transform" /> */}
         <div className="md:flex">
           <div className="md:w-1/2">
-            <div className="flex flex-col items-center gap-4 p-8 md:items-start md:px-12 md:py-16 md:flex-row border-slate-700">
+            <div className="flex flex-col items-center gap-4 p-8 border-white md:items-start md:px-12 md:py-16 md:flex-row">
               <div className="flex font-bold md:w-1/2">
                 <Link href='/' className="flex items-center justify-center h-20 p-4 bg-white rounded-md">
                   {/* <img loading="lazy" src={'/assets/cmilightlogo.png'} alt="logo" className="flex justify-center "></img> */}
@@ -60,7 +60,7 @@ const Footer = () => {
               {/* <div className="w-3/5 text-sm md:text-justify">Harvesting market intelligence to sow success, cultivating strategies for growth in dynamic landscapes. Your compass in the evolving business terrain.</div> */}
               <div className="text-2xl leading-relaxed md:w-1/2 ">Decision With <br /> Precision</div>
             </div>
-            <div className="flex flex-col gap-4 p-8 text-sm border-t md:gap-36 md:flex-row md:px-12 md:py-16 border-slate-600">
+            <div className="flex flex-col gap-4 p-8 text-sm border-t border-white md:gap-36 md:flex-row md:px-12 md:py-16">
               {/* <div>
                 <div className="mb-4 text-xl font-bold">Resources</div>
                 <div className="mb-2">Why Research Envision?</div>
@@ -109,7 +109,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4 p-8 border-t md:border-t-0 md:border-l md:w-1/2 md:px-12 md:py-16 border-slate-600">
+          <div className="flex flex-col gap-4 p-8 border-t border-white md:border-t-0 md:border-l md:w-1/2 md:px-12 md:py-16">
             <div className="flex flex-col gap-3 text-3xl text-white md:text-3xl ">
               <div>
                 Have any custom research requirements?
@@ -118,7 +118,7 @@ const Footer = () => {
             <div className="flex items-center justify-between mt-4 text-black bg-white rounded-full md:mt-8 md:w-3/4">
               <input className="w-full p-2 ml-3 outline-0" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email..." />
               {/* <div onClick={handleFormOpen} className="p-4 md:p-4 rounded-full bg-[#6f32be] hover:bg-[#763dc0] scale-110"> */}
-              <div onClick={handleFormOpen} className="p-4 scale-110 rounded-full md:p-4 bg-o2 hover:bg-o1">
+              <div onClick={handleFormOpen} className="p-4 scale-110 rounded-full md:p-4 bg-b2 hover:bg-b1">
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M5 12l14 0" />
@@ -133,7 +133,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-sm border-t cursor-default border-slate-600">
+        <div className="text-sm border-t border-white cursor-default">
           <div className="px-12 py-8 text-justify md:w-3/5">Research Envision, a leading market research firm, is committed to delivering unmatched insights and strategic intelligence. Our adept analysts provide actionable data, enabling businesses to make informed decisions in today's dynamic marketplace. Trust us for navigating your journey to success.</div>
           <div className="flex flex-col gap-8 px-12 py-8 md:flex-row md:items-end">
             <div>© 2024 Research Envision</div>

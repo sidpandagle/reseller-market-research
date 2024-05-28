@@ -28,10 +28,8 @@ export default function LatestReports() {
     return (
         <div className='relative md:h-[410px] overflow-clip'>
             <CustomToastContainer />
-            <div className='absolute w-full h-full -z-10 bg-gradient'>
-                <img loading='lazy' src="/assets/abstract.jpg" alt="bgimg" className='hidden md:block' />
-            </div>
-            <div className="z-10 max-w-6xl py-12 mx-auto text-white md:pt-10 sm:px-6">
+            <img loading='lazy' src={"/assets/reseller/b4.jpeg"} alt="bgimg2" className='absolute hidden w-full text-black -z-10 md:block blur-md' />
+            <div className="z-10 max-w-6xl py-12 mx-auto md:pt-10 sm:px-6">
                 <div className='mb-8 text-3xl font-extrabold text-center'>Latest Reports</div>
                 <motion.div initial={{ opacity: 0, y: '25%' }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{ once: true }}>
                     <div className="flex items-center justify-between mt-6">
@@ -67,7 +65,7 @@ export default function LatestReports() {
 
                             {reportList.map((val, index) =>
                                 <SwiperSlide key={index}>
-                                    <div className="mx-2 border rounded-md md:h-60 md:flex overflow-clip">
+                                    <div className="mx-2 border rounded-md shadow-lg md:h-60 md:flex overflow-clip">
                                         <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
                                             <img loading="lazy" className='object-contain' src={val.cover_img} alt="" />
                                         </div>
@@ -83,7 +81,7 @@ export default function LatestReports() {
                                             </div>
                                             <div className='flex justify-center mt-8 md:mt-0 md:justify-end'>
                                                 <Link href={`/report/${val.url}`}>
-                                                    <button type="button" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white transition-all bg-primary border border-transparent rounded-md hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
+                                                    <button type="button" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white transition-all border border-transparent rounded-md bg-primary hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
                                                         Read Me
                                                     </button>
                                                 </Link>
