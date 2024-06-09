@@ -15,9 +15,18 @@ export default function LatestReports() {
 
 
     useEffect(() => {
-        axios.get(`${apiUrl}/reports/latest?page=1&per_page=6`).then(res => {
+        axios.get(`${apiUrl}/reports/latest?page=1&per_page=12`).then(res => {
             if (res.data.data.length) {
-                setReportList(res.data.data)
+                let repList = [];
+                let rep = []
+                res.data.data.forEach(r=>{
+                    rep.push(r);
+                    if(rep.length == 2){
+                        repList.push(rep);
+                        rep = [];
+                    }
+                })
+                setReportList(repList)
             } else {
                 setReportList([])
                 notifyError('No latest reports')
@@ -26,25 +35,19 @@ export default function LatestReports() {
     }, []);
 
     return (
-        <div className='relative md:h-[410px] overflow-clip'>
+        <div className='relative overflow-clip'>
             <CustomToastContainer />
-            <img loading='lazy' src={"/assets/reseller/b4.jpeg"} alt="bgimg2" className='absolute hidden w-full text-black -z-10 md:block blur-md' />
-            <div className="z-10 max-w-6xl py-12 mx-auto md:pt-10 sm:px-6">
+            {/* <img loading='lazy' src={"/assets/reseller/b4.jpeg"} alt="bgimg2" className='absolute hidden w-full text-black -z-10 md:block blur-md' /> */}
+            <div className="z-10 py-12 mx-auto max-w-8xl md:pt-10 sm:px-6">
                 <div className='mb-8 text-3xl font-extrabold text-center'>Latest Reports</div>
                 <motion.div initial={{ opacity: 0, y: '25%' }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{ once: true }}>
+                    
                     <div className="flex items-center justify-between mt-6">
-                        <div className="p" onClick={() => { my_swiper.slidePrev() }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-arrow-left-filled" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#597e8d" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M12 2a10 10 0 0 1 .324 19.995l-.324 .005l-.324 -.005a10 10 0 0 1 .324 -19.995zm.707 5.293a1 1 0 0 0 -1.414 0l-4 4a1.048 1.048 0 0 0 -.083 .094l-.064 .092l-.052 .098l-.044 .11l-.03 .112l-.017 .126l-.003 .075l.004 .09l.007 .058l.025 .118l.035 .105l.054 .113l.043 .07l.071 .095l.054 .058l4 4l.094 .083a1 1 0 0 0 1.32 -1.497l-2.292 -2.293h5.585l.117 -.007a1 1 0 0 0 -.117 -1.993h-5.586l2.293 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z" strokeWidth={0} fill="currentColor" />
-                            </svg>
-
-                        </div>
                         <Swiper
                             onInit={(ev) => {
                                 set_my_swiper(ev)
                             }}
-                            slidesPerView={2}
+                            // slidesPerView={2}
                             breakpoints={{
                                 0: {
                                     slidesPerView: 1,
@@ -56,7 +59,7 @@ export default function LatestReports() {
                                     slidesPerView: 2,
                                 },
                                 865: {
-                                    slidesPerView: 2
+                                    slidesPerView: 3
                                 },
                             }}
                             onSlideChange={() => { }}
@@ -65,22 +68,46 @@ export default function LatestReports() {
 
                             {reportList.map((val, index) =>
                                 <SwiperSlide key={index}>
-                                    <div className="mx-2 border rounded-md shadow-lg md:h-60 md:flex overflow-clip">
+                                    <div className="mx-2 border rounded-md shadow-lg md:h-52 md:flex overflow-clip">
                                         <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
-                                            <img loading="lazy" className='object-contain' src={val.cover_img} alt="" />
+                                            <img loading="lazy" className='object-contain' src={val[0].cover_img} alt="" />
+                                        </div>
+                                        <div className="flex flex-col justify-between p-4 text-sm md:text-justify md:w-3/5">
+                                            <div>
+                                                <div className='mb-2 font-bold'>
+                                                    {/* {toCapitalCase(val[0].url)} */}
+                                                    {val[0].title?.split('Market')[0] + ' Market'}
+                                                </div>
+                                                <div className='line-clamp-4 max-h-[100px] overflow-hidden'>
+                                                    {val[0].summary}
+                                                </div>
+                                            </div>
+                                            <div className='flex justify-center mt-8 md:mt-0 md:justify-end'>
+                                                <Link href={`/report/${val[0].url}`}>
+                                                    <button type="button" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white transition-all border border-transparent rounded-md bg-primary hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
+                                                        Read Me
+                                                    </button>
+                                                </Link>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="mx-2 mt-8 border rounded-md shadow-lg md:h-52 md:flex overflow-clip">
+                                        <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
+                                            <img loading="lazy" className='object-contain' src={val[1].cover_img} alt="" />
                                         </div>
                                         <div className="flex flex-col justify-between p-4 text-sm md:text-justify md:w-3/5">
                                             <div>
                                                 <div className='mb-2 font-bold'>
                                                     {/* {toCapitalCase(val.url)} */}
-                                                    {val.title?.split('Market')[0] + ' Market'}
+                                                    {val[1].title?.split('Market')[0] + ' Market'}
                                                 </div>
-                                                <div className='pb-4 max-h-[100px] overflow-hidden'>
-                                                    {val.summary.split('...')[0].split(' ').filter((r, i) => i < 30).join(' ')}...
+                                                <div className='line-clamp-4 max-h-[100px] overflow-hidden'>
+                                                    {val[1].summary}
                                                 </div>
                                             </div>
                                             <div className='flex justify-center mt-8 md:mt-0 md:justify-end'>
-                                                <Link href={`/report/${val.url}`}>
+                                                <Link href={`/report/${val[1].url}`}>
                                                     <button type="button" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white transition-all border border-transparent rounded-md bg-primary hover:bg-quaternary focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2">
                                                         Read Me
                                                     </button>
@@ -92,12 +119,19 @@ export default function LatestReports() {
                                 </SwiperSlide>
                             )}
                         </Swiper>
-                        <div className="ml-2" onClick={() => { my_swiper.slideNext() }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-arrow-right-filled" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#6f32be" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z" strokeWidth={0} fill="currentColor" />
-                            </svg>
-
+                    </div>
+                    <div className="flex items-center justify-center ">
+                        <div class="flex flex-1 max-w-lg px-4 py-3 mt-6  sm:px-6">
+                            <div class="flex justify-between flex-1 sm:hidden">
+                                <button type="button" onClick={() => { my_swiper.slidePrev(); }} class="relative inline-flex items-center px-2 py-2 text-sm 5xl:text-xl font-medium text-gray-700 bg-white border border-gray-300 rounded-md sm:rounded-none hover:bg-gray-50" data-id="pagination-prev" ><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="w-5 h-5" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Previous</button>
+                                <button type="button" onClick={() => { my_swiper.slideNext(); }} class="relative inline-flex items-center px-2 py-2 text-sm 5xl:text-xl   font-medium text-gray-700 bg-white border border-gray-300 rounded-md sm:rounded-none hover:bg-gray-50 " data-id="pagination-next">Next <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="w-5 h-5" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
+                            </div>
+                            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                                <div class="relative z-0 flex justify-between w-full -space-x-px rounded-md" aria-label="Pagination">
+                                    <button type="button"  onClick={() => { my_swiper.slidePrev(); }} class="relative inline-flex items-center px-2 py-2 text-sm 5xl:text-xl font-medium text-gray-700 bg-white border border-gray-300 rounded-md sm:rounded-none hover:bg-gray-50 sm:rounded-l-md" data-id="pagination-prev" ><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="w-5 h-5" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Previous</button>
+                                    <button type="button" onClick={() => { my_swiper.slideNext(); }} class="relative inline-flex items-center px-2 py-2 text-sm 5xl:text-xl   font-medium text-gray-700 bg-white border border-gray-300 rounded-md sm:rounded-none hover:bg-gray-50 sm:rounded-r-md" data-id="pagination-next">Next <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="w-5 h-5" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </motion.div>

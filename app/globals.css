@@ -97,7 +97,8 @@
 } */
 .bg-gradient {
   /* background: linear-gradient(45deg, hsla(210, 91%, 25%, 1) 15%, hsla(321, 55%, 40%, 1) 85%); */
-  background: linear-gradient(45deg, #013C4D 50%, #D5441C 50%);
+  /* background: linear-gradient(45deg, #013C4D 50%, #D5441C 50%); */
+  background-color: #1E293B;
 }
 
 .html-content {

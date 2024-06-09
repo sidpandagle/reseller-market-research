@@ -45,7 +45,7 @@ export default function Search() {
         // <div className={`mx-auto py-12 bg-cover bg-bottom flex justify-center items-center bg-gradient-to-bl from-blue-900 to-blue-500 text-white`}>
         // <div className={`mx-auto py-12 bg-cover bg-bottom flex justify-center items-center bg-gradient-0 text-white`}>
         // <div className={`mx-auto py-12 bg-cover bg-bottom flex justify-center items-center bg-gradient-45 text-white`}>
-        <div className={`relative mx-auto py-12 md:h-[75vh] bg-cover overflow-clip bg-bottom flex justify-center items-center bg-gradient text-white`}>
+        <div className={`relative mx-auto py-12 md:h-[70vh] bg-cover overflow-clip bg-bottom flex justify-center items-center bg-gradient text-white`}>
             {/* <video className='absolute bottom-0 z-10 hidden w-full brightness-[0.4] md:block' autoPlay muted loop id="myVideo">
                 <source data-src={"/assets/sample.webm"} type="video/mp4" src={"/assets/sample.webm"} />
             </video>
@@ -56,7 +56,7 @@ export default function Search() {
 
             <div className='z-10 flex flex-col gap-8 px-4 text-center md:px-16 md:gap-8'>
                
-            <div className='relative flex items-center justify-center gap-4 pt-4' >
+            <div className='relative flex items-center justify-center gap-4' >
                     <div className='hidden md:block w-1/4 h-[2px] bg-white'>
                     </div>
                     <div className='text-xl text-center'>
@@ -105,7 +105,7 @@ export default function Search() {
                     </div>
                 </div>
                 
-                <div className="mt-3 text-3xl tracking-widest uppercase md:text-2xl" >
+                <div className="mt-3 text-3xl font-semibold tracking-widest uppercase md:text-2xl" >
                     Decision with Precision
                 </div>
             </div>

@@ -24,9 +24,9 @@ export default function Home() {
     <section className="relative" >
       <h1 className='fixed text-transparent'>Research Envision</h1>
       <Search />
-      <Insights />
       <LatestReports />
-      < LatestPressRelease />
+      <LatestPressRelease />
+      <Insights />
       <Services />
       <Testimonial />
       <AboutHome />
