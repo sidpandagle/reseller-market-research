@@ -45,7 +45,7 @@ export default function LatestPressRelease() {
                                         {/* <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{ delay: 0.2 }}> */}
                                         <div className="text-left border rounded-md md:flex ">
                                             <div className='flex items-center justify-center md:w-2/5 rounded-s-md rounded-e-md md:rounded-e-none overflow-clip'>
-                                                <img loading="lazy" src={res.cover_img.replace('/upload/','/upload/h_400/q_50')} className='object-cover w-full h-48' alt="cover_img" />
+                                                <img loading="lazy" src={res.cover_img.replace('/upload/','/upload/h_400/q_50/')} className='object-cover w-full h-48' alt="cover_img" />
                                             </div>
                                             <div className="relative flex flex-col p-4 text-sm md:w-3/5">
                                                 <div className='text-xs font-semibold text-right'>

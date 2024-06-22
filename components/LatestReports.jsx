@@ -69,7 +69,7 @@ export default function LatestReports() {
                                 <SwiperSlide key={index}>
                                     <div className="mx-2 border rounded-md shadow-lg md:h-52 md:flex overflow-clip">
                                         <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
-                                            <img loading="lazy" className='object-contain' src={val[0].cover_img.replace('/upload/','/upload/h_400/q_50')} alt="" />
+                                            <img loading="lazy" className='object-contain' src={val[0].cover_img.replace('/upload/','/upload/h_400/q_50/')} alt="" />
                                         </div>
                                         <div className="flex flex-col justify-between p-4 text-sm md:text-justify md:w-3/5">
                                             <div>
