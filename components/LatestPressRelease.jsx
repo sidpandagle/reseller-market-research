@@ -27,7 +27,7 @@ export default function LatestPressRelease() {
     return (
         <div className="relative py-12 overflow-clip">
             <CustomToastContainer />
-            <img loading='lazy' src={"/assets/reseller/b4.jpeg"} alt="bgimg2" className='absolute top-0 hidden w-full text-black -z-10 md:block blur-md' />
+            <img loading='lazy' src={"/assets/reseller/b4.webp"} alt="bgimg2" className='absolute top-0 hidden w-full text-black -z-10 md:block blur-md' />
             <div className="max-w-6xl px-4 mx-auto sm:px-6">
                 <div className="mx-auto text-center ">
                     <h2 className="mb-6 text-3xl font-extrabold text-slate-600">Latest Press Release</h2>

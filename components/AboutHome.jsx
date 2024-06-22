@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function AboutHome() {
   return (
     <div className='relative py-12 overflow-clip'>
-      <img loading='lazy' src={'/assets/reseller/b7.jpeg'} alt="bgimg" className='absolute top-0 hidden w-full blur-md md:block -z-10 bg-gradient' />
+      <img loading='lazy' src={'/assets/reseller/b7.webp'} alt="bgimg" className='absolute top-0 hidden w-full blur-md md:block -z-10 bg-gradient' />
       <div className='max-w-6xl mx-auto sm:px-6'>
         <div className="mb-10 text-3xl font-extrabold text-center ">About Us</div>
         <motion.div

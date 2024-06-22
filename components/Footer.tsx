@@ -46,7 +46,7 @@ const Footer = () => {
     <div>
       <div className="relative text-center text-white bg-o1 md:text-left">
         {/* <img loading="lazy" src={"/assets/footer-guy.png"} alt="working-guy" className="absolute hidden md:block bottom-0 right-10 h-[420px] transform -scale-x-100" /> */}
-        <img loading="lazy" src={"/assets/reseller/c3.png"} alt="working-guy" className="rounded-md absolute hidden md:block bottom-4 right-20 h-[280px]" />
+        <img loading="lazy" src={"/assets/reseller/c3.webp"} alt="working-guy" className="rounded-md absolute hidden md:block bottom-4 right-20 h-[280px]" />
         {/* <img loading="lazy" src={"/assets/f3.png"} alt="working-guy" className="absolute hidden md:block bottom-10 right-20 h-[360px] transform" /> */}
         <div className="md:flex">
           <div className="md:w-1/2">

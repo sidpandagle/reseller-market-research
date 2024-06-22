@@ -37,7 +37,6 @@ export default function LatestReports() {
     return (
         <div className='relative overflow-clip'>
             <CustomToastContainer />
-            {/* <img loading='lazy' src={"/assets/reseller/b4.jpeg"} alt="bgimg2" className='absolute hidden w-full text-black -z-10 md:block blur-md' /> */}
             <div className="z-10 py-12 mx-auto max-w-8xl md:pt-10 sm:px-6">
                 <div className='mb-8 text-3xl font-extrabold text-center'>Latest Reports</div>
                 <motion.div initial={{ opacity: 0, y: '25%' }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{ once: true }}>

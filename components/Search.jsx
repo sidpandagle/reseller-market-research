@@ -52,7 +52,7 @@ export default function Search() {
             <video className='absolute top-0 z-10 block w-full brightness-[0.4] md:hidden' autoPlay muted loop id="myVideo">
                 <source data-src={"/assets/sample_vertical.webm"} type="video/mp4" src={"/assets/sample_vertical.webm"} />
             </video> */}
-            <img src={'/assets/reseller/a1.jpeg'} className='absolute z-10 hidden w-full brightness-[0.4] md:block'/>
+            <img src={'/assets/reseller/a1.webp'} className='absolute z-10 hidden w-full brightness-[0.4] md:block'/>
 
             <div className='z-10 flex flex-col gap-8 px-4 text-center md:px-16 md:gap-8'>
                
