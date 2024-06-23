@@ -2,7 +2,7 @@
 const nextConfig = {
     env:{
         apiUrl : 'https://reseller-backend-production.up.railway.app',
-        reCaptchaKey : '6Ldr4ucoAAAAAKwW2FX-bCJIo6YHztxzf97Y_Tl8'
+        reCaptchaKey : '6Ldkc_8pAAAAAAm3WhyI2BuckwLlIScoxgN0KdtN'
     }
 }
 
