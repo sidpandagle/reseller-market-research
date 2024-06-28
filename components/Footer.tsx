@@ -53,7 +53,6 @@ const Footer = () => {
             <div className="flex flex-col items-center gap-4 p-8 border-white md:items-start md:px-12 md:py-16 md:flex-row">
               <div className="flex font-bold md:w-1/2">
                 <Link href='/' className="flex items-center justify-center h-20 p-4 bg-white rounded-md">
-                  {/* <img loading="lazy" src={'/assets/cmilightlogo.png'} alt="logo" className="flex justify-center "></img> */}
                   <img loading="lazy" src={'/assets/reseller/reseller_logo_rect1.png'} alt="logo" className="flex justify-center"></img>
                 </Link>
               </div>
