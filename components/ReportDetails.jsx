@@ -11,7 +11,7 @@ import Faq from '@/components/Faq';
 import Methodology from '@/components/Methodology';
 
 export default function ReportBuyNow({ report, url, segment }) {
-  
+
   const [localReport, setLocalReport] = useState(report);
   const [isNoTOC, setNoTOC] = useState(false);
 
@@ -48,7 +48,7 @@ export default function ReportBuyNow({ report, url, segment }) {
       imgToModify2.setAttribute("src", '');
       imgToModify2.style.height = '0px';
     }
-    reportData.description = descriptionDoc.documentElement.outerHTML;
+    // reportData.description = descriptionDoc.documentElement.outerHTML;
 
     // For Methodology
     const methodologyDoc = parser.parseFromString(reportData?.methodology, "text/html");
@@ -58,9 +58,9 @@ export default function ReportBuyNow({ report, url, segment }) {
       methodologyImgToModify1.style.height = '0px';
     }
     reportData.methodology = methodologyDoc.documentElement.outerHTML;
-    if(extractContent(reportData.toc)=='Request Table of Contents'){
+    if (extractContent(reportData.toc) == 'Request Table of Contents') {
       setNoTOC(true);
-    } 
+    }
     setLocalReport(reportData);
     getReportImages(reportData.id);
   }
@@ -96,7 +96,6 @@ export default function ReportBuyNow({ report, url, segment }) {
   const extractContent = (s) => {
     let span = document.createElement('span');
     span.innerHTML = s;
-    console.log(span.textContent || span.innerText)
     return span.textContent || span.innerText;
   }
 
@@ -104,23 +103,26 @@ export default function ReportBuyNow({ report, url, segment }) {
     <div>
       <div className={`${(segment !== 'request-sample' && segment !== 'Request') && 'md:sticky top-0'} p-4 relative justify-between gap-2 bg-white md:flex`}>
         <Link href={'/report/' + report?.url} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${!segment ? 'font-bold bg-o1 text-white' : ''}`}>Description</Link>
-        <Link href={'/report/' + report?.url + '/toc' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'toc' ? 'font-bold bg-o1 text-white' : ''}`}>Table Of Content</Link>
-        <Link href={'/report/' + report?.url + '/highlights' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'highlights' ? 'font-bold bg-o1 text-white' : ''}`}>Highlights</Link>
-        <Link href={'/report/' + report?.url + '/methodology' } className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'methodology' ? 'font-bold bg-o1 text-white' : ''}`}>Methodology</Link>
-        <Link href={'/report/' + report?.url + '/request-sample' } className={`codepen-button md:w-1/4 w-full md:mb-0 mb-4 text-sm box-border relative z-10 flex justify-center items-center border rounded-sm cursor-pointer ${segment === 'request-sample'  && segment !== 'Request' ? 'font-bold' : ''}`}>
+        <Link href={'/report/' + report?.url + '/toc'} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'toc' ? 'font-bold bg-o1 text-white' : ''}`}>Table Of Content</Link>
+        <Link href={'/report/' + report?.url + '/highlights'} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'highlights' ? 'font-bold bg-o1 text-white' : ''}`}>Highlights</Link>
+        <Link href={'/report/' + report?.url + '/methodology'} className={`md:w-1/4 py-3 md:mb-0 mb-4 duration-200 text-sm flex justify-center items-center border rounded-sm cursor-pointer  ${segment === 'methodology' ? 'font-bold bg-o1 text-white' : ''}`}>Methodology</Link>
+        <Link href={'/report/' + report?.url + '/request-sample'} className={`codepen-button md:w-1/4 w-full md:mb-0 mb-4 text-sm box-border relative z-10 flex justify-center items-center border rounded-sm cursor-pointer ${segment === 'request-sample' && segment !== 'Request' ? 'font-bold' : ''}`}>
           <span className='py-2 text-center'>Request Sample</span>
         </Link>
       </div>
-      <div className='px-4'>
+      <div className='px-4 pb-4'>
         {!segment &&
           <div>
-            <div className='html-content description-content' dangerouslySetInnerHTML={{ __html: localReport?.description }}></div>
-            {localReport?.description && <Faq faqs={JSON.parse(localReport?.faqs)} />}
+            {/* <div className='html-content description-content' dangerouslySetInnerHTML={{ __html: localReport?.description }}></div> */}
+            <div className='whitespace-pre-line'>{localReport?.description.split('\n').join('\n\n')}</div>
+            {/* <div className='whitespace-pre-line'>{localReport?.description.split('\n').join('\n\n')}</div> */}
+            {/* {localReport?.description && <Faq faqs={JSON.parse(localReport?.faqs)} />} */}
           </div>
         }
         {segment === 'toc' && !isNoTOC &&
           <div>
-            <div dangerouslySetInnerHTML={{ __html: localReport?.toc }}></div>
+            {/* <div dangerouslySetInnerHTML={{ __html: localReport?.toc }}></div> */}
+            <div className='whitespace-pre-line'>{localReport?.toc.split('\n').join('\n\n')}</div>
           </div>
         }
         {segment === 'toc' && isNoTOC &&
@@ -130,7 +132,8 @@ export default function ReportBuyNow({ report, url, segment }) {
         }
         {segment === 'highlights' &&
           <div>
-            <div dangerouslySetInnerHTML={{ __html: localReport?.highlights }}></div>
+            {/* <div dangerouslySetInnerHTML={{ __html: localReport?.highlights }}></div> */}
+            <div className='whitespace-pre-line'>{localReport?.highlights.split('\n').join('\n\n')}</div>
           </div>
         }
         {segment === 'methodology' &&

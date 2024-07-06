@@ -32,6 +32,7 @@ export default function Search() {
 
     const getCategoryList = () => {
         getCategories().then(data => {
+            data = data.filter((r,i) => i < 14)
             setCategories(data)
         });
     }
@@ -72,7 +73,8 @@ export default function Search() {
                                 categories.map((res, index) => (
                                     <Link key={index} href={`/reports/${res.url}`}>
                                         <div className='flex flex-col items-center gap-1 mb-2 duration-200 hover:scale-125 hover:font-semibold'>
-                                            <img loading="lazy" src={'/assets/' + res.icon} alt='category-icon' className="flex justify-center w-6 duration-100 "></img>
+                                            {/* <img loading="lazy" src={'/assets/' + res.icon} alt='category-icon' className="flex justify-center w-6 duration-100 "></img> */}
+                                            <svg className='w-6 duration-100' fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1.927 23.935a2.4 2.4 0 0 1-1.882-1.883 2.4 2.4 0 0 1 2.82-2.82 2.4 2.4 0 0 1 1.882 1.882 2.4 2.4 0 0 1-2.82 2.82zM21.135 4.768a2.4 2.4 0 0 1-1.882-1.882 2.4 2.4 0 0 1 2.82-2.82 2.4 2.4 0 0 1 1.882 1.882 2.4 2.4 0 0 1-2.82 2.82zM12.021 6.01c1.147 0 2.219.324 3.13.883l2.585-2.585A9.583 9.583 0 0 0 4.328 17.716l2.586-2.586a5.99 5.99 0 0 1 5.107-9.12zm5.107 2.86a5.99 5.99 0 0 1-8.237 8.237l-2.586 2.585A9.583 9.583 0 0 0 19.713 6.284z"></path></g></svg>
                                             <div className="text-center mx-1 text-[8px] md:text-[10px] w-20">{res.name}</div>
                                         </div>
                                     </Link>

@@ -69,14 +69,14 @@ export default function LatestReports() {
                             {reportList.map((val, index) =>
                                 <SwiperSlide key={index}>
                                     <div className="mx-2 border rounded-md shadow-lg md:h-52 md:flex overflow-clip">
-                                        <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
+                                        {/* <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
                                             <img loading="lazy" className='object-contain' src={val[0].cover_img} alt="" />
-                                        </div>
-                                        <div className="flex flex-col justify-between p-4 text-sm md:text-justify md:w-3/5">
+                                        </div> */}
+                                        <div className="flex flex-col justify-between p-4 text-sm md:text-justify">
                                             <div>
-                                                <div className='mb-2 font-bold'>
+                                                <div className='mb-2 text-[18px] font-semibold'>
                                                     {/* {toCapitalCase(val[0].url)} */}
-                                                    {val[0].title?.split('Market')[0] + ' Market'}
+                                                    {val[0].title?.split('Market')[0].replace('Global ','') + ' Market'}
                                                 </div>
                                                 <div className='line-clamp-4 max-h-[100px] overflow-hidden'>
                                                     {val[0].summary}
@@ -93,16 +93,16 @@ export default function LatestReports() {
                                         </div>
                                     </div>
                                     <div className="mx-2 mt-8 border rounded-md shadow-lg md:h-52 md:flex overflow-clip">
-                                        <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
+                                        {/* <div className="flex items-center justify-center bg-white md:w-2/5 h-[200px] overflow-clip md:h-auto md:p-0 text-slate-400">
                                             <img loading="lazy" className='object-contain' src={val[1].cover_img} alt="" />
-                                        </div>
-                                        <div className="flex flex-col justify-between p-4 text-sm md:text-justify md:w-3/5">
+                                        </div> */}
+                                        <div className="flex flex-col justify-between p-4 text-sm md:text-justify">
                                             <div>
-                                                <div className='mb-2 font-bold'>
+                                                <div className='mb-2 text-[18px] font-semibold'>
                                                     {/* {toCapitalCase(val.url)} */}
-                                                    {val[1].title?.split('Market')[0] + ' Market'}
+                                                    {val[1].title?.split('Market')[0].replace('Global ','') + ' Market'}
                                                 </div>
-                                                <div className='line-clamp-4 max-h-[100px] overflow-hidden'>
+                                                <div className='line-clamp-4 max-h-[200px] overflow-hidden'>
                                                     {val[1].summary}
                                                 </div>
                                             </div>

@@ -37,7 +37,8 @@ export default function BuyNow({ params }) {
                                 <div className='flex flex-col justify-between py-2'>
                                     <div>
                                         <div className='flex flex-col items-center gap-4 md:items-start md:flex-row'>
-                                            <img loading="lazy" src={report.cover_img} className='object-cover w-16 h-20 rounded-md bg-slate-500' alt="" />
+                                            {report.cover_img && <img loading="lazy" src={report.cover_img} className='object-cover w-16 h-20 rounded-md bg-slate-500' alt="" />}
+                                            {!report.cover_img && <div className='flex items-center justify-center w-16 h-20 font-bold text-white rounded-md bg-slate-500'>RE</div>}
                                             {/* <div className='object-fill font-semibold text-white rounded-md overflow-clip bg-slate-500'>
                                             </div> */}
                                             <div>
