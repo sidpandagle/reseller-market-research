@@ -110,11 +110,11 @@ export const constConfig =
 
 
 export const getCategories = async () => {
-    if (localStorage.getItem('category_list')) {
-        return JSON.parse(localStorage.getItem('category_list'));
+    if (localStorage.getItem('category_list_v1')) {
+        return JSON.parse(localStorage.getItem('category_list_v1'));
     } else {
         return await axios.get(`${apiUrl}/category/`).then(res => {
-            localStorage.setItem('category_list', JSON.stringify(res.data.data))
+            localStorage.setItem('category_list_v1', JSON.stringify(res.data.data))
             return res.data.data
         })
     }
