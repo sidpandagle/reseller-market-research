@@ -46,14 +46,13 @@ const Footer = () => {
     <div>
       <div className="relative text-center text-white bg-o1 md:text-left">
         {/* <img loading="lazy" src={"/assets/footer-guy.png"} alt="working-guy" className="absolute hidden md:block bottom-0 right-10 h-[420px] transform -scale-x-100" /> */}
-        <img loading="lazy" src={"/assets/reseller/c3.png"} alt="working-guy" className="rounded-md absolute hidden md:block bottom-4 right-20 h-[280px]" />
+        <img loading="lazy" src={"/assets/reseller/c3.webp"} alt="working-guy" className="rounded-md absolute hidden md:block bottom-4 right-20 h-[280px]" />
         {/* <img loading="lazy" src={"/assets/f3.png"} alt="working-guy" className="absolute hidden md:block bottom-10 right-20 h-[360px] transform" /> */}
         <div className="md:flex">
           <div className="md:w-1/2">
             <div className="flex flex-col items-center gap-4 p-8 border-white md:items-start md:px-12 md:py-16 md:flex-row">
               <div className="flex font-bold md:w-1/2">
                 <Link href='/' className="flex items-center justify-center h-20 p-4 bg-white rounded-md">
-                  {/* <img loading="lazy" src={'/assets/cmilightlogo.png'} alt="logo" className="flex justify-center "></img> */}
                   <img loading="lazy" src={'/assets/reseller/reseller_logo_rect1.png'} alt="logo" className="flex justify-center"></img>
                 </Link>
               </div>

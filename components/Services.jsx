@@ -4,8 +4,7 @@ import { motion } from "framer-motion"
 export default function Services() {
     return (
         <div className='relative text-black overflow-clip'>
-            {/* <img loading='lazy' src="/assets/reseller/b6.jpeg" alt="bgimg" className='absolute hidden w-full -z-10 bg-gradient md:block -top-20 blur-md' /> */}
-            <img loading='lazy' src="/assets/reseller/b6.jpeg" alt="bgimg" className='absolute hidden w-full -z-10 bg-gradient md:block blur-md' />
+            <img loading='lazy' src="/assets/reseller/b6.webp" alt="bgimg" className='absolute hidden w-full -z-10 bg-gradient md:block blur-md' />
             <div className="px-4 mx-auto max-w-7xl sm:px-6">
                 <div className="pt-12 md:py-12 md:pt-10">
                     <div className="pb-12 mx-auto text-center md:pb-0">
