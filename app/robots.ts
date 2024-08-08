@@ -5,7 +5,12 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: [
+        '/report/*/toc',
+        '/report/*/highlights',
+        '/report/*/methodology',
+        '/report/*/request-sample'
+      ]
     },
     sitemap: 'https://www.researchenvision.com/sitemap.xml',
   }
